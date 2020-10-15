@@ -4,60 +4,125 @@ h1,
 h2,
 p,
 ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background-color: #f9fafc;
-	padding: 20px;
+  background-color: #f9fafc;
+  padding: 20px;
 }
 
 .chirpus {
-	color: #000;
+  color: #000;
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-link {
-	color: #69696a;
+  color: #69696a;
 }
-
+.about-text {
+  border-left: 3px;
+  color: #69696a;
+  padding-left: 10px;
+}
 .nav-list {
-	list-style: none;
+  list-style: none;
 }
 
 .button {
-	background-color: black;
-	border-radius: 25px;
-	display: block;
-	color: white;
-	padding: 10px;
-	text-align: center;
+  background-color: black;
+  border-radius: 25px;
+  display: block;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .about-text {
-	border-left: 3px solid black;
-	padding-left: 10px;
+  border-left: 3px solid black;
+  padding-left: 10px;
 }
 
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(247, 193, 162, 0.7);
-	width: 100%;
-	padding: 5px;
-	box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(247, 193, 162, 0.7);
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .footer-nav {
-	float: right;
+  float: right;
 }
 
 .nav-item {
-	display: inline-block;
+  display: inline-block;
 }
-@media (min-width 768px)
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    margin: 10px;
+  }
+  .main {
+    display: flex;
+  }
+  .about-container {
+    flex: 1;
+    align-items: stretch;
+    position: relative;
+    width: 50%;
+  }
+  .asset-container {
+    flex: 1;
+    position: relative;
+    float: right;
+    left: -150px;
+    top: -60px;
+  }
+  .button {
+    background-color: black;
+    border-radius: 25px;
+    display: block;
+    color: white;
+    padding: 10px;
+  }
+}
+.circle-one {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  background-color: rgba(247, 136, 167, 0.6);
+}
+.circle-two {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 49px;
+  left: -37px;
+  background-color: rgba(247, 193, 162, 0.7);
+}
+.circle-three {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: -30px;
+  top: 15px;
+  position: absolute;
+  background-color: rgba(207, 130, 213, 0.6);
+}
